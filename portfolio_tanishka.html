@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanishka-Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="preconnect" href="<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">">
@@ -20,6 +22,11 @@ body {
     background-size: cover;
     color: #1c1c1c;
     font-family: 'Poppins', sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+
 }
 
 nav {
@@ -48,6 +55,8 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #a7cce0;
+     transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 .left {
@@ -65,9 +74,20 @@ nav ul li a:hover {
     width: 25%;
 }
 
+
 .leftsection {
-    font-size: 1.7rem;
+    
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+  animation-delay: 0.5s;
 }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 
 .rightsection img {
     width: 100%;
@@ -159,13 +179,18 @@ main hr {
 }
 
 .project-card {
-    background-color: #d4e6f1;
     color: #1c1c1c;
     border-radius: 20px;
     padding: 20px;
     width: 280px;
     text-align: center;
     transition: transform 0.3s ease;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    
 }
 
 .project-card img {
@@ -222,6 +247,16 @@ main hr {
 .social-links a:hover {
     color: #0b3c5d;
 }
+
+button:hover {
+  animation: wiggle 0.3s ease-in-out;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -283,7 +318,7 @@ html {
 
         </section>
         <hr>
-        <section id="projects" class="projects-section">
+        <section id="projects" class="projects-section" data-aos="fade-up">
     <div class="heading-with-image">
         <h1>My Projects</h1>
         <img src="files app icon.jpg" alt="projects icon">
@@ -332,6 +367,11 @@ html {
       typeSpeed: 50,
     });
   </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 
 </html>

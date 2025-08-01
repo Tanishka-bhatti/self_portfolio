@@ -74,11 +74,27 @@ nav ul li a:hover {
     width: 25%;
 }
 .skills {
-    margin-top: 20px;
+    margin-top: 50px;
     font-weight: bold;
-    font-size: 1.2rem;
-    color: #444;
-    word-spacing: 10px;
+    font-size: 1.3rem;
+    color: #9b59b6;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%; /* or adjust as needed */
+}
+
+.scrolling-text {
+    display: inline-block;
+    animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 
@@ -293,7 +309,9 @@ html {
                 
                 <div>I am a computer science student specialising in Artificial-Intelligence and I am a</div>
                 <span id="element"></span>
-                  <div class= "skills"> C++ PYTHON JAVASCRIPT HTML CSS R </div>
+                  <div class= "skills">
+                       <span class="scrolling-text">
+                           C++ PYTHON JAVASCRIPT HTML CSS R </div>
             </div>
            
             <div class="rightsection">
@@ -382,6 +400,7 @@ html {
 </body>
 
 </html>
+
 
 
 

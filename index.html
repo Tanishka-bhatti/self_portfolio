@@ -68,8 +68,10 @@ nav ul li a:hover {
 
 .firstsection {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     margin: 120px 0;
+    gap:40px;
 }
 
 .firstsection > div {
@@ -79,6 +81,7 @@ nav ul li a:hover {
     margin-top: 70px;
     padding: 20px;
     color: #222;
+    text-align:left;
 }
 
 .skills-section h2 {
@@ -141,7 +144,8 @@ nav ul li a:hover {
 
 
 .leftsection {
-    
+  flex: 1
+  text-align: left;
   opacity: 0;
   animation: fadeIn 2s ease-in forwards;
   animation-delay: 0.5s;
@@ -152,9 +156,13 @@ nav ul li a:hover {
     opacity: 1;
   }
 }
+.rightsection{
+    flex:1;
+}
 
 
 .rightsection img {
+    
     width: 100%;
 }
 
@@ -511,6 +519,7 @@ html {
 </body>
 
 </html>
+
 
 
 

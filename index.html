@@ -110,6 +110,17 @@ nav ul li a:hover {
     margin-right: 8px;
     vertical-align: middle;
 }
+.skills-inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.skills-column {
+    flex: 1;
+    min-width: 300px;
+}
 
 
 .skill-chip:hover {
@@ -342,6 +353,9 @@ html {
                 <span id="element"></span>
                
 <section class="skills-section">
+     <div class="skills-inner-wrapper">
+        <!-- Left column: Languages -->
+        <div class="skills-column">
     <h2>Languages</h2>
     <div class="skills-group">
         <span class="skill-chip">
@@ -363,7 +377,8 @@ html {
             <i class="devicon-r-original colored"></i> R
         </span>
     </div>
-
+        </div>
+     <div class="skills-column">
     <h2>Frameworks & Tools</h2>
     <div class="skills-group">
         <span class="skill-chip">
@@ -391,8 +406,8 @@ html {
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn" class="custom-icon">
     Scikit-learn
 </span>
-
-
+</div> 
+    </div>
     </div>
 </section>
 
@@ -497,6 +512,7 @@ html {
 </body>
 
 </html>
+
 
 
 

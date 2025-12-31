@@ -221,6 +221,41 @@
         flex-direction: column;
         text-align: center;
       }
+      .work-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255,255,255,0.05);
+  padding: 15px 20px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+.work-item:hover {
+  transform: translateX(8px);
+  box-shadow: 0 0 20px rgba(155, 89, 182, 0.4);
+}
+
+.work-item img {
+  width: 45px;
+}
+
+.work-item a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.work-item a:hover {
+  color: #9b59b6;
+}
+
     }
   </style>
 </head>
@@ -235,6 +270,8 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+
     </ul>
   </nav>
 
@@ -272,6 +309,37 @@
   </section>
 
   <hr>
+  <hr>
+
+<section id="about" class="secondsection">
+  <div class="heading-with-image">
+    <h1>Work Experience</h1>
+    <img src="Pink computer png💗💻.jpg" alt="work icon">
+  </div>
+
+  <div class="work-list">
+    <div class="work-item" data-aos="fade-right">
+      <img src="—Pngtree—pixel art medal rank icon_8534307.png" alt="icon">
+      <span>
+        <strong>C++ Intern</strong> — IGDTUW Anveshan Foundation  
+        <br><small>Dec 2024 – Jan 2025</small>
+        <br>
+        <a href="certificate.jpg" target="_blank">View Certificate</a>
+      </span>
+    </div>
+
+    <div class="work-item" data-aos="fade-left">
+      <img src="—Pngtree—pixel art medal rank icon_8534307.png" alt="icon">
+      <span>
+        <strong>MERN + AI Intern</strong> — IGDTUW  
+        <br><small>Jun 2025 – Jul 2025</small>
+        <br>
+        <a href="certificate.jpg" target="_blank">View Certificate</a>
+      </span>
+    </div>
+  </div>
+</section>
+
 
   <!-- PROJECTS -->
   <section id="projects">
@@ -342,3 +410,4 @@
 
 </body>
 </html>
+
